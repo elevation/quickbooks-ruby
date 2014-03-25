@@ -12,6 +12,7 @@ module Quickbooks
       xml_accessor :placed_on, :from => 'TxnDate', :as => Time
 
       xml_accessor :line_items, :from => 'Line', :as => [Line]
+      xml_accessor :txn_tax_detail, :from => 'TxnTaxDetail', :as => TransactionTaxDetail
       xml_accessor :customer_ref, :from => 'CustomerRef', :as => BaseReference
       xml_accessor :bill_email, :from => 'BillEmail', :as => EmailAddress
       xml_accessor :bill_address, :from => 'BillAddr', :as => PhysicalAddress
